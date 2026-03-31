@@ -29,6 +29,7 @@ python --version
 Step 1: Download the project
 
 Clone the repository or download ZIP:
+
 https://github.com/swastik25bac10033-tech/ai-expense-tracker-cli/blob/main/A.I.%20Powered%20Expense%20Tracker/exp2.py
 
 Step 2: No additional dependencies required
@@ -44,36 +45,50 @@ os
 So no need to install anything extra.
 
 ▶️ How to Run
+
 Basic Command Format:
+
 python exp2.py <command> [options]
 
 1. Add Expense
+ 
   python exp2.py add --amount 200 --description "pizza"
+
   python exp2.py add --amount 100 --category Food --description "Lunch"
 
-2. List Expenses 
+2. List Expenses
+ 
   python exp2.py list
+ 
   python exp2.py list --category Food
+ 
   python exp2.py list --from 2026-03-01 --to 2026-03-31
 
-3. Summary
+4. Summary
+ 
   python exp2.py summary
+ 
   monthly:-
-    python exp2.py summary --month 2026-03
+   python exp2.py summary --month 2026-03
 
-4. Total
+5. Total
+ 
   python exp2.py total
 
-5. Budget
-   Set Budget:-
+6. Budget
+
+    Set Budget:-
       python exp2.py budget --set Food --limit 500
-   Show Budget:-
+
+    Show Budget:-
       python exp2.py budget --show
 
-6. Delete Expense
+8. Delete Expense
+ 
   python exp2.py delete --id 1
 
-7. Export data
+9. Export data
+ 
   python exp2.py export --format csv
 
 🤖 AI Features
@@ -82,7 +97,9 @@ python exp2.py <command> [options]
 The system automatically predicts categories using keyword-based classification.
 
 Example:
+
 python exp2.py add --amount 200 --description "pizza"
+
 🤖 Predicted Category: Food
 
 2. Spending Insight
@@ -94,15 +111,20 @@ The system identifies the category with the highest spending and provides sugges
 Data is stored locally using JSON files:
 
 expenses.json
+
 budgets.json
 
 These files are automatically created when the program runs.
 
 🔮 Future Enhancements
+
 Integration with bank APIs for automatic expense tracking
+
 Advanced machine learning model for prediction
+
 GUI or web-based interface
 
 
 👨‍💻 Author
+
 Swastik Gupta
